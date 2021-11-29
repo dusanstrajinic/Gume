@@ -49,3 +49,12 @@ alter table artikl_termin add foreign key (termin) references termin(sifra);
 alter table usluga_termin add foreign key (usluga) references usluga(sifra);
 alter table usluga_termin add foreign key (termin) references termin(sifra);
 
+select * from artikl;
+
+insert into artikl(sifra,cijena,vrsta,naziv) values
+(null,40,'Ratkapa','Toro'),
+(null,50,'Ratkapa','Racing'),
+(null,60,'Ratkapa','Agro'),
+(null,100,'GumaZimska','Sava'),
+(null,200,'GumaZimska','Michelin'),
+(null,250,'GumaZimska','GoodYear');
